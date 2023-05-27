@@ -13,11 +13,11 @@ nav{
 
 .logo-nav{
     height: 90px;
+    cursor: pointer;
 }
 
 .logo-responsive{
     height: 42px;
-    cursor: pointer;
 }
 
 .button{
@@ -65,6 +65,53 @@ nav{
 }
 
 
+/* formulario */
+.container-formulario{
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    max-width: 500px;
+    border: 1px solid #496940;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-size: 20px;
+}
+
+input, textarea{
+    background-color: #496940;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+input{
+    height: 40px;
+}
+
+textarea{
+    height: 100px;
+}
+
+button{
+    height: 50px;
+    background-color: white;
+    color: #496940;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 1px;
+    font-size: 20px;
+}
+
+button:hover {
+    border:2px solid#496940;
+    font-weight: bold;
+}
+
 h3{
     font-size: 50px;
     text-align: center;
@@ -74,7 +121,6 @@ h3{
 }
 
 strong{
-    color:#496940;
     font-family: cursive;
 }
 
@@ -119,6 +165,15 @@ h4{
     font-size: 50px;
 }
 
+h5{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+
 
 .container-image-gustos{
     padding: 20px;
@@ -132,6 +187,37 @@ h4{
 }
 
 
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .modal-content {
+    background-color: #8fc680ea;
+    width: 500px;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: red;
+  }
 
 /* estilos para el footer */
 .container-main{
@@ -177,7 +263,7 @@ h4{
 }
 
 
-
+/* responsive */
 
 @media (max-width: 670px) and (min-width: 320px) {
 
@@ -207,6 +293,18 @@ h4{
         font-size: 30px;
     }
 
+    .container-formulario{
+        max-width: 300px;
+        background-color: #496940;
+        color:white;
+    }
+
+    input, textarea{
+        background-color: white;
+        color:#496940
+    }
+
+
     .container-image{
         display: block;
         text-align: center;
@@ -235,6 +333,29 @@ h4{
         width: 200px;
         height: 200px;
     }
+
+    /* modal */
+    .modal-content {
+        background-color: #8fc680ea;
+        width: 250px;
+        height:auto;
+        margin: 100px auto;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      h5{
+        font-size: 18px;
+      }
+
+      p{
+        font-size: 16px;
+        
+      }
+
+      strong{
+        color:black
+      }
 
     /* footer */
 

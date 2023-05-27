@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <nav>
-            <img src="css/image/plogo.png" class="logo-nav">
+            <img src="css/image/plogo.png" class="logo-nav" onclick="goToPage('index.html')">
     
             <div class="container-image-responsive">
                 <img src="css/image/compu.png" class="logo-responsive">
@@ -19,9 +19,8 @@
             </div>
     
             <div class="group-button">
-                <button class="button" onclick="goToPage('index.html')">Home</button>
+                <button class="button" onclick="goToPage('index.html')">Mee</button>
                 <button class="button" onclick="goToPage('portafolio.html')">Portafolio</button>
-                <button class="button" onclick="goToPage('contact.html')">Contacto</button>
             </div>
         </nav>
     
@@ -73,11 +72,30 @@
         </div>
     
         <div>
-            <h3>Recuerda que vale la pena soñar</h3>
+            <h3><i>Estamos en contacto</i></h3>
             <div>
-    
+                <form id="myForm" class="container-formulario" >
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit" onclick="sendForm()">Enviar</button>
+                </form>
             </div>
-    
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeButton" onclick="closeModal()">&times;</span>
+              <h5>Datos ingresados con éxito:</h5>
+              <p id="modalName"></p>
+              <p id="modalEmail"></p>
+              <p id="modalMessage"></p>
+            </div>
         </div>
         </main>
     

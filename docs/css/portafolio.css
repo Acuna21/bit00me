@@ -14,11 +14,11 @@ nav{
 
 .logo-nav{
     height: 90px;
+    cursor: pointer;
 }
 
 .logo-responsive{
     height: 42px;
-    cursor: pointer;
 }
 
 .button{
