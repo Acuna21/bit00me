@@ -36,10 +36,11 @@ function openModal(name, email, message) {
 
   document.getElementById("modalName").innerHTML = "<strong>Nombre:</strong> " + name;
   document.getElementById("modalEmail").innerHTML = "<strong>Email:</strong> " + email;
-  document.getElementById("modalMessage").innerHTML = "<strong>Mensaje:</strong> " + message;
+  document.getElementById("modalMessage").innerHTML =  message;
 
   let modal = document.getElementById("modal");
   modal.style.display = "block";
+  document.getElementById("modalMessage").disabled = true;
 }
 
 

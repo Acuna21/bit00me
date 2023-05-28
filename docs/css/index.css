@@ -167,7 +167,7 @@ h4{
 
 h5{
     font-size: 30px;
-    color:white;
+    color:#496940;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0;
@@ -200,12 +200,13 @@ h5{
   }
   
   .modal-content {
-    background-color: #8fc680ea;
+    background-color: white;
     width: 500px;
     height: auto;
     margin: 100px auto;
     padding: 20px;
     border-radius: 8px;
+    border:2px solid #ccc;
   }
   
   .close {
@@ -217,6 +218,18 @@ h5{
   
   .close:hover {
     color: red;
+  }
+
+  .text-area-modal{
+    height: 200px;
+    width: 480px;
+    color:black;
+
+  }
+
+  .title-mensaje{
+    margin: 0;
+    font-weight: bold;
   }
 
 /* estilos para el footer */
@@ -336,7 +349,7 @@ h5{
 
     /* modal */
     .modal-content {
-        background-color: #8fc680ea;
+        background-color: #8fc680fa;
         width: 250px;
         height:auto;
         margin: 100px auto;
@@ -344,8 +357,14 @@ h5{
         border-radius: 8px;
       }
 
+      .text-area-modal{
+        width: 250px;
+        height: 100px;
+      }
+
       h5{
         font-size: 18px;
+        color:black ;
       }
 
       p{
@@ -407,8 +426,6 @@ h5{
         min-width: 330px;
         max-width: 450px;
     }
-
-   
 
     /* footer */
    
