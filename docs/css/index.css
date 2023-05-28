@@ -8,7 +8,8 @@ nav{
     border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 0 1rem;
 }
 
 .logo-nav{
@@ -62,6 +63,7 @@ nav{
     display: flex;
     border: 1px solid #496940;
     border-radius: 4px;
+    padding: 1rem;
 }
 
 
@@ -136,7 +138,6 @@ strong{
     text-align: justify;
     font-size: 30px;
     min-width: 700px;
-    max-width: 1000px;
 }
 
 .informacion, p{
@@ -167,10 +168,11 @@ h4{
 
 h5{
     font-size: 30px;
-    color:#496940;
+    color:black;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 
@@ -200,7 +202,7 @@ h5{
   }
   
   .modal-content {
-    background-color: white;
+    background-color: #8fc680fa;
     width: 500px;
     height: auto;
     margin: 100px auto;
@@ -221,7 +223,9 @@ h5{
   }
 
   .text-area-modal{
-    height: 200px;
+    background-color: transparent;
+    border: 0;
+    height: auto;
     width: 480px;
     color:black;
 
@@ -358,13 +362,12 @@ h5{
       }
 
       .text-area-modal{
-        width: 250px;
-        height: 100px;
+        width: 200px;
+        font-size:14px;
       }
 
       h5{
         font-size: 18px;
-        color:black ;
       }
 
       p{
